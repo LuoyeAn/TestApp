@@ -11,7 +11,7 @@ const browserHistory = createBrowserHistory({ basename: '' });
 var reactPlugin = new ReactPlugin();
 var appInsights = new ApplicationInsights({
     config: {
-        connectionString: 'InstrumentationKey=eb64cd96-b8d0-c50b-b810-1474416492b0;EndpointSuffix=applicationinsights.azure.cn;IngestionEndpoint=https://chinaeast2-0.in.applicationinsights.azure.cn/;AADAudience=https://monitor.azure.cn/',
+        connectionString: '',
         extensions: [reactPlugin],
         extensionConfig: {
             [reactPlugin.identifier]: { history: browserHistory }
